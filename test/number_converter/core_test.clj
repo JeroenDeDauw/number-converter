@@ -4,8 +4,8 @@
 
 
 (deftest decimal-to-binary
-  (is (= 0 (convert-number 0 (range 10) [0 1])))
-  (is (= 1 (convert-number 1 (range 10) [0 1])))
+  (is (= "0" (convert-number 0 (range 10) [0 1])))
+  (is (= "1" (convert-number 1 (range 10) [0 1])))
   )
 
 (deftest decimal-to-abc
