@@ -4,12 +4,12 @@
 
 
 (deftest decimal-to-binary
-  (is (= "0" (convert-number 0 (range 10) [0 1])))
-  (is (= "1" (convert-number 1 (range 10) [0 1])))
+  (is (= "0" (convert-number 0 [0 1])))
+  (is (= "1" (convert-number 1 [0 1])))
   )
 
 (deftest decimal-to-abc
-  (is (= "a" (convert-number 0 (range 10) ["a" "b" "c"])))
-  (is (= "b" (convert-number 1 (range 10) ["a" "b" "c"])))
+  (is (= "a" (convert-number 0 ["a" "b" "c"])))
+  (is (= "b" (convert-number 1 ["a" "b" "c"])))
   )
 
