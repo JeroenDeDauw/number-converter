@@ -26,3 +26,12 @@
   (is (= ["b" "a" "a"] (convert-number 9 ["a" "b" "c"])))
   )
 
+(defn nyanstr [s] (apply str s))
+
+(deftest decimal-to-random
+  (is (= "Cat " (nyanstr (convert-number 0 ["Cat " "Nyan " "of doom"]))))
+  (is (= "Nyan " (nyanstr (convert-number 1 ["Cat " "Nyan " "of doom"]))))
+  (is (= "of doom" (nyanstr (convert-number 2 ["Cat " "Nyan " "of doom"]))))
+  (is (= "Nyan Cat " (nyanstr (convert-number 3 ["Cat " "Nyan " "of doom"]))))
+  (is (= "Nyan Cat of doom" (nyanstr (convert-number 11 ["Cat " "Nyan " "of doom"])))))
+

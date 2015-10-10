@@ -18,4 +18,4 @@
          (recur
            (- n symbol-value)
            (inc step)
-           (cons (nth output-symbols (/ symbol-value (expt (count output-symbols) (dec step)))) acc) ))))))
+           (cons (nth output-symbols (/ symbol-value (expt (count output-symbols) (dec step)))) acc)))))))
