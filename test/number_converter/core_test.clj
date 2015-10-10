@@ -3,5 +3,6 @@
             [number-converter.core :refer :all]))
 
 (deftest a-test
-  (testing "weee"
-    (is (= 1 1))))
+  (testing "Decimal 0 is Binary 0"
+    (= 0 (convert-number 0 (range 10) [0 1]))))
+

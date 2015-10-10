@@ -5,3 +5,5 @@
   [& args]
   (println "Hello, World!"))
 
+(defn convert-number [n input-form output-form]
+  0)
