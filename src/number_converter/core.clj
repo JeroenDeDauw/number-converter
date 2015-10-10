@@ -25,7 +25,10 @@
          acc 0]
     (if (empty? xs)
       acc
-      (recur (drop-last xs) (inc step) (+ acc (* (.indexOf input-symbols (last xs)) (expt (count input-symbols) step)))))))
+      (recur
+        (drop-last xs)
+        (inc step)
+        (+ acc (* (.indexOf input-symbols (last xs)) (expt (count input-symbols) step)))))))
 
 (defn convert-number
   ([n output-symbols]
