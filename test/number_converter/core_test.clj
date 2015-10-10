@@ -49,5 +49,7 @@
     ))
 
 (deftest nyancat-to-foobar
-  (is (= ["baz" "bar" "baz"] (convert-number ["Nyan" "Nyan" "Cat" "of doom"] ["Cat" "Nyan" "of doom"] ["foo" "bar" "baz", "bah"])))
+  (let [nyancat ["Cat" "Nyan" "of doom"]
+        foobar ["foo" "bar" "baz", "bah"]]
+    (is (= ["baz" "bar" "baz"] (convert-number ["Nyan" "Nyan" "Cat" "of doom"] nyancat foobar))))
   )
